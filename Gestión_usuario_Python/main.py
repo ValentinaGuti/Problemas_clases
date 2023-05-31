@@ -12,7 +12,7 @@ class Usuario:
 
     def cambiar_password(self, nuevo_password):
         self.password = nuevo_password
-        print("Contraseña canbiada exitosamente.")
+        print("Contraseña cambiada exitosamente.")
 
 class Invitado(Usuario):
     def __init__(self, nombre, correo):
@@ -25,7 +25,7 @@ class Administrador(Usuario):
     def eliminar_usuario(self, usuario, sistema):
         sistema.eliminar_usuario(usuario)
 
-            def modificar_usuario(self, usuario, nuevo_nombre, nuevo_correo, sistema):
+    def modificar_usuario(self, usuario, nuevo_nombre, nuevo_correo, sistema):
         if usuario not in sistema.usuarios:
             raise UsuarioNoExiste("El usuario no existe en el sistema.")
         usuario.nombre = nuevo_nombre
